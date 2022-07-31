@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keycode Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body onkeydown="keycode(event)"> <!--onkeydown event occurs when the user presses a key-->
+
+    <div id="welcome">
+        <h1>Press any key to generate a keycode</h1>
+    </div>
+
+    <div id="containter">
+        <h1>Keycode Generator</h1>
+
+        <h2 id="keycode"></h2>
+        <div id="wrapper">
+            <div class="box">
+                <p>event.key</p> <!--returns the value of the key pressed by the user-->
+                <h3 id="eventKey"></h3>
+            </div>
+
+            <div class="box">
+                <p>event.location</p> <!--returns an unsigned long representing the location of a key on the keyboard -->
+                <h3 id="eventLocation"></h3>
+            </div>  
+
+            <div class="box">
+                <p>event.which</p> <!--returns a unicode of the key that has been pressed-->
+                <h3 id="eventWhich"></h3>
+            </div>
+
+            <div class="box">
+                <p>event.code</p> <!--represents a physical key on the keyboard-->
+                <h3 id="eventCode"></h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
